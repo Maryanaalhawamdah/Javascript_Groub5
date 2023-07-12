@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function shorterString(string1, string2, string3, string4, string5) {
+        const strings = [string1, string2, string3, string4, string5];
+        let short = strings[0];
+
+        for (let i = 1; i < strings.length; i++) {
+        if (strings[i].length < short.length) {
+        short = strings[i];
+    }    
+  }
+  return short;
+}
+       
+        const result = shorterString("Amjad","Omaaaar","Maryana","Somiah","Batool");
+        document.write(`<h1>${result}</h1>`); 
+
+    </script>
+</body>
+</html>

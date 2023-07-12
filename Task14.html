@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longerString(string1, string2, string3, string4) {
+        const strings = [string1, string2, string3, string4];
+        let a = strings[0];
+
+       for (let i = 1; i < strings.length; i++) {
+       if (strings[i].length > a.length) {
+       a = strings[i];
+     }
+    }
+
+  return a;
+}
+const result = longerString("Hello", "Hi there", "Welcome", "Goodbye");
+console.log(result);
+  
+    </script>
+</body>
+</html>
