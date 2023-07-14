@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Task 16</h1>
     <script>
-        function IsEven(num){
-            if((num %2) == 0 ){
-               return false ;
+        function IsOdd(num){
+            if((num %2) != 0 ){
+               return true ;
             }
             else{
-                return true;
+                return false;
             }
         }
         let number1 =Number(prompt("Enter a number"));
-        let a = IsEven(number1);
+        let a = IsOdd(number1);
         console.log("Your number is :",a);
     </script>
-</body>
 </body>
 </html>
