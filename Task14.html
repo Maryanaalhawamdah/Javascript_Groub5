@@ -8,21 +8,28 @@
 <body>
   <h1>Task 14</h1>
     <script>
-        function longerString(string1, string2, string3, string4) {
-        const strings = [string1, string2, string3, string4];
-        let a = strings[0];
+       function longerString(str1, str2, str3, str4) {
+  var longestString = str1;
 
-       for (let i = 1; i < strings.length; i++) {
-       if (strings[i].length > a.length) {
-       a = strings[i];
-     }
-    }
+  if (str2.length > longestString.length) {
+    longestString = str2;
+  }
 
-  return a;
+  if (str3.length > longestString.length) {
+    longestString = str3;
+  }
+
+  if (str4.length > longestString.length) {
+    longestString = str4;
+  }
+
+  return longestString;
 }
-const result = longerString("Hello", "Hi there", "Welcome", "Goodbye");
-console.log(result);
-  
+        let a = prompt("Enter the first string :");
+        let b = prompt("Enter the second string :");
+        let c = prompt("Enter the thaird string :");
+        let d = prompt("Enter the forth string :");
+        console.log(longerString(a,b,c,d));
     </script>
 </body>
 </html>
